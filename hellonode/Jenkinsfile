@@ -11,7 +11,7 @@ node {
         /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-        app = docker.build("cscojianzhan/k8s-hello/hellonode:${env.BUILD_ID}", "hellonode")
+        app = docker.build("cscojianzhan/k8s-hello:${env.BUILD_ID}", "hellonode")
     }
 
     stage('Test image') {
