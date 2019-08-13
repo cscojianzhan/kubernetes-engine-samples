@@ -1,3 +1,3 @@
 #!/bin/sh
-[ -f /app/server.js ] || exit 1
+test -f /app/server.js  || exit 1
 
